@@ -1,0 +1,53 @@
+/*Global Styles*/
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/*Body*/
+body{
+}
+
+/*Container*/
+.container {
+}
+
+/*Message Card*/
+.message-card {
+}
+
+   /*Message Card Header*/
+.message-card__header {
+}
+.message-card__circle {
+}
+.message-card__name {
+}
+.message-card__close-icon {
+}
+
+   /*Message Card Body*/
+.message-card__body {
+}
+.message-card__date {
+}
+.message-card__chats {
+}
+.message-card__chat {
+}
+.message-card__time {
+}
+.message-card__text {
+}
+   /*Message Card Footer*/
+.message-card__footer {
+}
+.message-card__intup-box {
+}
+.message-card__input {
+}
+.message-card__btn {
+}
