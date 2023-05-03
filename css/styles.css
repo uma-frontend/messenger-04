@@ -7,47 +7,178 @@
    box-sizing: border-box;
 }
 
+
 /*Body*/
 body{
+   font-family: "Roboto", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   background-color: #c9d8e5;
+   color: #000;
+   margin: 0;
+
 }
 
 /*Container*/
 .container {
+   width: 100%;
+   max-width: 430px;
+   padding: 0px 15px;
+   margin: 100px auto;
 }
 
 /*Message Card*/
 .message-card {
+   background-color: #fff;
 }
 
    /*Message Card Header*/
 .message-card__header {
+   background-color: #6a96d8;
+   height: 60px;
+   padding: 0px 20px;
+   margin: 0px 0px 20px 0px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
 .message-card__circle {
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+   background-color: #fff;
+   margin: 0px 13px 0px 0px;
 }
 .message-card__name {
+   margin: 0px auto 0px 0px;
+   color: #fff;
+   text-transform: uppercase;
+
 }
 .message-card__close-icon {
+   width: 24px;
+   height: 24px;
+   background-image: url(../img/close.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   cursor: pointer;
+   opacity: 0.7;
+   transition: opacity 0.3s ease;
 }
-
+.message-card__close-icon:hover{
+   opacity: 1;
+}
    /*Message Card Body*/
 .message-card__body {
+   padding: 0px 20px;
 }
 .message-card__date {
+   text-transform: uppercase;
+   text-align: center;
+   color: #e6e1de;
+   display: flex;
+   align-items: center;
+   margin: 0px 0px 20px 0px;
+}
+.message-card__date::before{
+   content:"";
+   width: 100%;
+   height: 1px;
+   background-color: #e6e1de;
+   margin: 0px 10px 0px 0px;
+}
+.message-card__date::after{
+   content:"";
+   width: 100%;
+   height: 1px;
+   background-color: #e6e1de;
+   margin: 0px 0px 0px 10px;
 }
 .message-card__chats {
+   display: flex;
+   flex-direction: column;
 }
 .message-card__chat {
+   width: 70%;
+   margin: 0px 0px 15px 0px;
+}
+.message-card__chat:nth-child(2){
+   align-self: flex-end;
+}
+.message-card__chat:nth-child(3){
+   width: 30%;
+}
+.message-card__chat:nth-child(4){
+   align-self: flex-end;
 }
 .message-card__time {
+   display: inline-block;
+   color: #b7adaa;
+   margin: 0px 0px 10px 0px;
 }
 .message-card__text {
+   padding: 15px 10px;
+   background-color: #e6edf6;
+   border-radius: 5px;
+}
+.bg-grey{
+   background-color: #f2f2f2;
+}
+.bg-warning{
+   background-color: #ffc2c1;
+}
+.text-right{
+   display: block;
+   text-align: right;
 }
    /*Message Card Footer*/
 .message-card__footer {
+   padding: 15px 20px;
+}
+.footer__line{
+   display: flex;
+   margin: 0px auto;
+   width: 100%;
+   max-width: 360px;
+   height: 1px;
+   background-color: #e6e1de;
+   border: none;
 }
 .message-card__intup-box {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 .message-card__input {
+   border: none;
+}
+.message-card__input:focus{
+   outline: none;
 }
 .message-card__btn {
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: bold;
+   letter-spacing: 2px;
+   color: #6a96d8;
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 320px) {
+   .message-card__name{
+      font-size: 14px;
+   }
+   .message-card__date{
+      font-size: 14px;
+   }
+   .message-card__time {
+      font-size: 14px;
+   }
+   .message-card__text {
+      font-size: 12px;
+   }
+   .message-card__btn {
+      font-size: 14px;
+   }
 }
